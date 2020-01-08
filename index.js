@@ -35,6 +35,17 @@ app.get('/create', (req, res)=> {
     res.render('form');
 });
 
+app.post('/create', parseForm, (req, res) => {
+    // console.log(`*********post`)
+    // reading the data from the form
+    console.log(req.body)
+    res.redirect('/create/success');
+})
+
+app.get('/create/success', (req, res) => {
+    // console.log('redirect**********')
+    res.send('success. <a href="/create">create</a>');
+})
 
 server.listen(PORT, ()=> {
     console.log(`Listening on port ${PORT}...`)

@@ -5,11 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>f o r m s</title>
+    <style>
+
+        
+    </style>
 </head>
 <body>
     <form method="POST">
+        <label>
+            Name:
+            <input type="text" name="name" placeholder="Name">
+        </label>
+<br>
+        <label>
+            Description:
+            <textarea name="description" cols="14" rows="2" placeholder="description"></textarea>
+        </label>
+<br>
+        <label>
+            Gives Joy?
+            <input type="checkbox" name="givesJoy">            
+        </label>
         <input type="submit" value="send it">
     </form>
     
 </body>
 </html>
+
+<!-- <form method="POST">
+    <input type="text" name="name" placeholder="Name">
+    <textarea name="description" cols="14" rows="2" placeholder="description"></textarea>
+    <input type="checkbox" name="givesJoy">Gives joy?</input>
+    <select name="rank">
+        <option value="best">best</option>
+        <option value="alright">alright</option>
+        <option value="bad">bad</option>
+    </select>
+    <input type="radio" name="rating" value="1">1
+    <input type="radio" name="rating" value="2">2
+    <input type="radio" name="rating" value="3">3
+    <input type="submit" value="send it">
+</form> -->
